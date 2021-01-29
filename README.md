@@ -17,7 +17,6 @@
  <a href="#-sobre-o-projeto">Sobre</a> •
  <a href="#-layout">Layout</a> • 
  <a href="#-como-executar-o-projeto">Como executar</a> • 
- <a href="#-créditos">Créditos</a> • 
  <a href="#-autora">Autor</a> 
 </p>
 
@@ -30,14 +29,16 @@ No desenvolvimento da aplicação, são vistos conceitos de comunicação em tem
 
 ---
 ## 🎨 Layout
+	
+#### :point_right: Home Page
+<p align="center">
+  <img alt="Home" src="./public/prints/home.png" width="70%;">    
+</p>
 
-### Home Page
-
-![home page](./public/prints/home.png)
-
-### Room
-
-![room](./public/prints/room.png)
+#### :point_right: Room
+<p align="center">
+   <img alt="Room" src="./public/prints/room.png" width="70%;">
+</p>
 
 ## 🚀 Como executar o projeto
 
@@ -106,13 +107,6 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 ---
 
-## :clap: Créditos
-
-- Layout da home foi baseada no codepen do [Nelson Adonis Hernandez](https://codepen.io/nelsonher019/pen/eYZBqOm)
-- Layout da room foi adaptado a partir do repo do canal [CleverProgrammers](https://github.com/CleverProgrammers/nodejs-zoom-clone/blob/master/views/room.ejs)
-
----
-
 ## 🦸 Autora
 
 <table>
@@ -120,3 +114,11 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
     <td align="center"><a href="https://github.com/vanessaSwerts/"><img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/57146734?v=4" width="100px;" alt=""/><br /><sub><b>Vanessa Swerts</b></sub></a></td>  
   </tr>
 </table>
+
+
+---
+
+## :clap: Créditos
+
+- Layout da home foi baseada no codepen do [Nelson Adonis Hernandez](https://codepen.io/nelsonher019/pen/eYZBqOm)
+- Layout da room foi adaptado a partir do repo do canal [CleverProgrammers](https://github.com/CleverProgrammers/nodejs-zoom-clone/blob/master/views/room.ejs)
