@@ -75,7 +75,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
     # Execute a aplicação
     $ npm start   
 
-    # O servidor inciará na porta:3000 - acesse http://localhost:3000 .
+    # O servidor inciará na porta:8080 - acesse http://localhost:8080 .
    ```
 ##### 🧭 Rodando a aplicação Server
 
