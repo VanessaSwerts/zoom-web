@@ -10,7 +10,7 @@
 </p>
 
 <h4 align="center"> 
-	🚧 Zoom Web Clone - em desenvolvimento 🚧
+	🚧 Zoom Web Clone - Concluído 🚧
 </h4>
 
 <p align="center">
