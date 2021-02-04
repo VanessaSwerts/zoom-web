@@ -23,7 +23,7 @@ class Business {
 
   async _init() {
     this.view.configureRecordButton(this.onRecordPressed.bind(this))
-
+    this.view.configureLeaveButton(this.onLeavePressed.bind(this))
 
     this.currentStream = await this.media.getCamera()
     this.socket = this.socketBuilder
@@ -128,15 +128,15 @@ class Business {
     this.recordingEnabled = recordingEnabled
     console.log('pressionou!!', recordingEnabled)
 
-    for( const [key, value] of this.usersRecordings) {
-        if(this.recordingEnabled) {
-            value.startRecording()
-            continue;
-        }
-        this.stopRecording(key)
+    for (const [key, value] of this.usersRecordings) {
+      if (this.recordingEnabled) {
+        value.startRecording()
+        continue;
+      }
+      this.stopRecording(key)
     }
-    
-}
+
+  }
 
   // Se um usuario entrar e sair da call durante uma gravação, precisamos parar as gravações anteriores dele
   async stopRecording(userId) {
@@ -150,7 +150,19 @@ class Business {
       if (!isRecordingActive) continue;
 
       await rec.stopRecording()
-
+      this.playRecordings(key)
     }
+  }
+
+  playRecordings(userId) {
+    const user = this.usersRecordings.get(userId)
+    const videosURLs = user.getAllVideoURLs()
+    videosURLs.map(url => {
+      this.view.renderVideo({ url, userId })
+    })
+  }
+
+  onLeavePressed() {
+    this.usersRecordings.forEach((value, key) => value.download())
   }
 }
